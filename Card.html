@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simple card for website</title>
+  <style>
+    *{
+      margin: 0%;
+      padding: 0%;
+      box-sizing: border-box;
+    }
+
+    
+
+    body{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      background: #131212;
+    }
+     .container{
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 40px 0px;
+     }
+
+     .container .box{
+      position: relative;
+      width: 320px;
+      height: 400px;
+      color: #fff;
+      background: #111;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 20px 30px;
+      transition: 0.5;
+     }
+
+     .container .box{
+      max-height: 425px;
+      background: linear-gradient(45deg, #ffbc00, #ff0058);
+      padding: 33px;
+     }
+
+     .container .box::hover{
+      max-height: 425px;
+      background: linear-gradient(45deg, #ffbc00, #be0b49);
+      padding: 33px;
+      cursor: pointer;
+     }
+
+     .container .box::after{
+      max-height: 425px;
+      background: linear-gradient(45deg, #ffbc00, #ff0058);
+      padding: 33px;
+      filter: blur(30px);
+     }
+
+     .container .box span{
+      position: absolute;
+      top: 6px;
+      left: 6px;
+      right: 6px;
+      bottom: 6px;
+      background: rgba(0,0,0,0.6);
+      z-index: 2;
+     }
+
+     .container .box .content{
+      position: relative;
+      z-index: 10;
+      padding: 20px 40px;
+     }
+
+     .container .box .content h2{
+      font-size: 2rem;
+      color: #fff;
+      margin-bottom: 10px;
+     }
+
+     .container .box .content p{
+     padding-bottom: 10px;
+     }
+
+     .container .box .content a{
+      text-decoration: none;
+      background: #fff;
+      padding: 10px;
+      border-radius: 5px;
+      color: black;
+      display: inline-block;
+     }
+
+     .container .box .content a:hover{
+      background: linear-gradient(50deg,#234562,#fff);
+      
+     }
+
+
+  </style>
+</head>
+<body>
+  <div class="container">
+
+    <div class="box">
+      <span></span>
+      <div class="content">
+        <h2>Card 1</h2>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+           Ad est temporibus enim! Dolore, voluptas natus!</p>
+           <a href="#">read more</a>
+      </div>        
+    </div>
+
+    <div class="box">
+      <span></span>
+      <div class="content">
+        <h2>Card 1</h2>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+           Ad est temporibus enim! Dolore, voluptas natus!</p>
+           <a href="#">read more</a>
+      </div>        
+    </div>
+
+    <div class="box">
+      <span></span>
+      <div class="content">
+        <h2>Card 1</h2>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+           Ad est temporibus enim! Dolore, voluptas natus!</p>
+           <a href="#">read more</a>
+      </div>        
+    </div>
+
+  </div>
+</body>
+</html>
